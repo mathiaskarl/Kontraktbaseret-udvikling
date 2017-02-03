@@ -11,7 +11,6 @@ namespace Kontraktbaseret_udvikling___Projekt
         static void Main(string[] args)
         {
             GameManager manager = new GameManager();
-            Console.ReadLine();
         }
     }
 }
