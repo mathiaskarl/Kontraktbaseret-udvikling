@@ -33,6 +33,7 @@ namespace Kontraktbaseret_udvikling___Projekt.Games
             return GetUserInput();
         }
 
+
         public virtual bool Start()
         {
             this.IsRunning = true;

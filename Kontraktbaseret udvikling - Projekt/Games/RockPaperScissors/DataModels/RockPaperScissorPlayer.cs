@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Kontraktbaseret_udvikling___Projekt.Interfaces;
+﻿using Kontraktbaseret_udvikling___Projekt.Interfaces;
 
-namespace Kontraktbaseret_udvikling___Projekt.DataModels
+namespace Kontraktbaseret_udvikling___Projekt.Games.RockPaperScissors.DataModels
 {
     public class RockPaperScissorPlayer : IPlayer
     {

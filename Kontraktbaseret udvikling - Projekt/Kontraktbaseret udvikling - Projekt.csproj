@@ -43,10 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModels\Input.cs" />
-    <Compile Include="DataModels\RockPaperScissorPlayer.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="Games\Game.cs" />
-    <Compile Include="Games\RockPaperScissors.cs" />
+    <Compile Include="Games\RockPaperScissors\DataModels\RockPaperScissorPlayer.cs" />
+    <Compile Include="Games\RockPaperScissors\RockPaperScissors.cs" />
     <Compile Include="Interfaces\IGame.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="IOHandler.cs" />

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Kontraktbaseret_udvikling___Projekt.DataModels;
 using Kontraktbaseret_udvikling___Projekt.Games;
+using Kontraktbaseret_udvikling___Projekt.Games.RockPaperScissors;
 using Kontraktbaseret_udvikling___Projekt.Interfaces;
 
 namespace Kontraktbaseret_udvikling___Projekt
@@ -16,6 +17,13 @@ namespace Kontraktbaseret_udvikling___Projekt
         private readonly IOHandler _ioHandler;
         private readonly List<IGame> _games = new List<IGame>() { new RockPaperScissors() };
 
+        /*
+        * Command 
+        * Signature: 
+        *   GameManager()
+        * Ensure:
+        *   this._ioHandler     !=  null         
+        */
         public GameManager()
         {
             this._ioHandler = new IOHandler(this);
@@ -31,6 +39,15 @@ namespace Kontraktbaseret_udvikling___Projekt
             }
         }
 
+        /*
+        * Command 
+        * Signature: 
+        *   void StartGame(Input input)
+        * Require:
+        *   input               != null
+        * Ensure:
+        *   this.currentGame    != null   
+        */
         public void StartGame(Input input)
         {
             try
